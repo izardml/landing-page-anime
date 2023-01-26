@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 
+.reveal {
+    opacity: 0;
+    transition-duration: 1s;
+}
+
+.reveal.active {
+    opacity: 1;
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -107,6 +116,7 @@ header {
     transform: translateX(-50%);
     width: 100%;
     backdrop-filter: blur(5px);
+    z-index: 9999;
 }
 
 header > div {
@@ -155,7 +165,6 @@ header li:hover a,
     padding-bottom: 5rem;
     color: white;
     background-color: rgba(0, 0, 0, 0.4);
-    opacity: 100%;
 }
 
 .char-box {
