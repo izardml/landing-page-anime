@@ -34,7 +34,7 @@ body > div {
     /* height: 100vh;
     overflow: hidden; */
     padding-top: 10rem;
-    /* padding-bottom: 10rem; */
+    padding-bottom: 5rem;
 }
 
 .hero-box {
@@ -140,8 +140,8 @@ header li:hover a,
 }
 
 #story {
-    padding-top: 10rem;
-    padding-bottom: 8rem;
+    padding-top: 7rem;
+    padding-bottom: 10rem;
     color: white;
 }
 
