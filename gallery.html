@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+    }
+
+    .container {
+      margin: auto;
+      max-width: 1024px;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0 4px;
+    }
+
+    /* Create four equal columns that sits next to each other */
+    .column {
+      flex: 30%;
+      max-width: 30%;
+      padding: 0 4px;
+    }
+
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+      border-radius: px;
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+      .column {
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <img src="img/img_5.jpg" alt="">
+        <img src="img/img_1.jpg" alt="">
+        <img src="img/img_2.jpg" alt="">
+      </div>
+      <div class="column">
+        <img src="img/img_3.jpg" alt="">
+        <img src="img/img_4.jpg" alt="">
+        <img src="img/img_5.jpg" alt="">
+      </div>
+      <div class="column">
+        <img src="img/img_2.jpg" alt="">
+        <img src="img/img_3.jpg" alt="">
+        <img src="img/img_4.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
